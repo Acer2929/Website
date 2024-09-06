@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fadeIn 2s forwards, slideIn 2s forwards;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+    animation: fadeInText 2s forwards;
+}
+
+header p {
+    font-size: 1.2em;
+    animation: fadeInText 2s forwards;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Dark background */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Lighter background on hover */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInSection 1s forwards;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
